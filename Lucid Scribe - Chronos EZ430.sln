@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronos EZ430", "Chronos EZ430\Chronos EZ430.csproj", "{3BF051C1-A5D7-4054-88B9-A11F1C4F70AE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LucidScribe.TI.EZ430", "Installer\LucidScribe Chronos EZ430.vdproj", "{490B3320-5654-45E1-ADA2-4BFDCD58A88B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF051C1-A5D7-4054-88B9-A11F1C4F70AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF051C1-A5D7-4054-88B9-A11F1C4F70AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF051C1-A5D7-4054-88B9-A11F1C4F70AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF051C1-A5D7-4054-88B9-A11F1C4F70AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490B3320-5654-45E1-ADA2-4BFDCD58A88B}.Debug|Any CPU.ActiveCfg = Debug
+		{490B3320-5654-45E1-ADA2-4BFDCD58A88B}.Debug|Any CPU.Build.0 = Debug
+		{490B3320-5654-45E1-ADA2-4BFDCD58A88B}.Release|Any CPU.ActiveCfg = Release
+		{490B3320-5654-45E1-ADA2-4BFDCD58A88B}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
