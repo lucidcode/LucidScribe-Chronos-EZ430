@@ -32,6 +32,10 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="lucidcode.Controls, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\lucidcode.Controls.dll</HintPath>
+    </Reference>
     <Reference Include="lucidcode.LucidScribe.Interface, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\lucidcode.LucidScribe.Interface.dll</HintPath>
@@ -47,8 +51,19 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Packet.cs" />
     <Compile Include="PluginHandler.cs" />
+    <Compile Include="PortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PortForm.designer.cs">
+      <DependentUpon>PortForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PortName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PortForm.resx">
+      <DependentUpon>PortForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

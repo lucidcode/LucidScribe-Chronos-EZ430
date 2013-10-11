@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace lucidcode.LucidScribe.Plugin.TI.EZ430
 {
@@ -23,7 +24,14 @@ namespace lucidcode.LucidScribe.Plugin.TI.EZ430
                 if (!m_boolInitialized)
                 {
                     string p = m_objEZ.GetComPortName();
-                    if (p == "") { throw (new Exception("port not found.")); }
+                    if (p == "") { 
+                       PortForm formPort = new PortForm();
+                       if (formPort.ShowDialog() == DialogResult.OK)
+                       {
+                         p = formPort.SelectedPort;
+                       }
+                       if (p == "") { throw (new Exception("port not found.")); }
+                    }
                     m_objEZ.OpenComPort(p);
                     m_objEZ.StartSimpliciTI();
 
